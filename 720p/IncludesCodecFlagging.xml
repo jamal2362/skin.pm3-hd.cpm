@@ -6,23 +6,23 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoResolution,flagging/video/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoResolution)</visible>
 		</control>
 		<control type="image">
-			<description>Common Codec Image</description>
+			<description>Video Codec Image</description>
 			<width>90</width>
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoCodec,flagging/video/,.png]</texture>
-			<!-- Don't show if its one of the 500 divx codecs -->
-			<visible>![substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]</visible>
+			<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoCodec)</visible>
 		</control>
 		<control type="image">
-			<description>Divx Codec Image</description>
+			<description>Video HDR Type Image</description>
 			<width>90</width>
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/video/divx.png</texture>
-			<visible>[substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]</visible>
+			<texture>$INFO[ListItem.HdrType,flagging/video/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.HdrType)</visible>
 		</control>
 	</include>
 	<include name="AudioCodecFlagging">
@@ -32,6 +32,7 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.AudioCodec,flagging/audio/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioCodec)</visible>
 		</control>
 		<control type="image">
 			<description>Audio Channels Image</description>
@@ -39,6 +40,7 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.AudioChannels,flagging/audio/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioChannels)</visible>
 		</control>
 	</include>
 	<include name="AspectCodecFlagging">
@@ -48,6 +50,7 @@
 			<height>33</height>
 			<aspectratio>keep</aspectratio>
 			<texture>$INFO[ListItem.VideoAspect,flagging/aspectratio/,.png]</texture>
+                        <visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoAspect)</visible>
 		</control>
 	</include>
 </includes>

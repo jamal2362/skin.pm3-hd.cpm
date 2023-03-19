@@ -705,7 +705,7 @@
 				<label></label>
 				<font></font>
 				<aligny></aligny>
-				<onclick>XBMC.PlayDVD()</onclick>
+				<onclick>PlayDVD()</onclick>
 				<texturefocus>home-playmedia.png</texturefocus>
 				<texturenofocus>home-playmedia.png</texturenofocus>
 				<onleft>9000</onleft>

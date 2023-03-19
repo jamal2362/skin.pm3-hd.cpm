@@ -668,7 +668,7 @@
 					<posx>0</posx>
 					<posy>90</posy>
 					<label>$INFO[Skin.String(WeatherScript_Label)]</label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(WeatherScript_Path)])</onclick>
+					<onclick>RunScript($INFO[Skin.String(WeatherScript_Path)])</onclick>
 					<include>ButtonCommonValues</include>
 					<visible>Skin.HasSetting(WeatherScript_Enable) + !IsEmpty(Skin.String(WeatherScript_Label))</visible>
 					<onleft>50</onleft>

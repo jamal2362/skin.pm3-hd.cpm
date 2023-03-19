@@ -214,7 +214,7 @@
 					<onup>17</onup>
 					<ondown>610</ondown>
 					<pulseonselect>no</pulseonselect>
-					<onclick>xbmc.mastermode</onclick>
+					<onclick>mastermode</onclick>
 					<selected>system.ismaster</selected>
 					<visible>system.haslocks</visible>
 				</control>
@@ -280,7 +280,7 @@
 			<posy>10</posy>
 			<font>font13</font>
 			<include>WindowTitleCommons</include>
-			<label>Video - $INFO[ListItem.VideoResolution] - $INFO[ListItem.VideoCodec] - $INFO[ListItem.VideoAspect] - Audio - $INFO[ListItem.AudioCodec] - $INFO[ListItem.AudioChannels] - $INFO[ListItem.AudioLanguage] - Subtitle - $INFO[ListItem.SubtitleLanguage]</label>
+			<label>Video - $INFO[ListItem.VideoResolution] - $INFO[ListItem.VideoCodec] - $INFO[Listitem.HdrType] - $INFO[ListItem.VideoAspect] - Audio - $INFO[ListItem.AudioCodec] - $INFO[ListItem.AudioChannels] - $INFO[ListItem.AudioLanguage] - Subtitle - $INFO[ListItem.SubtitleLanguage]</label>
 		</control>
 -->
 	</controls>

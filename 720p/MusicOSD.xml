@@ -55,7 +55,7 @@
 				<onright>212</onright>
 				<onup>212</onup>
 				<ondown>210</ondown>
-				<onclick>XBMC.PlayerControl(record)</onclick>
+				<onclick>PlayerControl(record)</onclick>
 				<visible>Player.CanRecord</visible>
 			</control>
 			<control type="button" id="209">
@@ -72,7 +72,7 @@
 				<onright>920</onright>
 				<onup>920</onup>
 				<ondown>211</ondown>
-				<onclick>XBMC.PlayerControl(record)</onclick>
+				<onclick>PlayerControl(record)</onclick>
 				<visible>Player.CanRecord + Player.Recording</visible>
 			</control>
 			<control type="image" id="1">
@@ -101,7 +101,7 @@
 				<height>79</height>
 				<texturefocus>osd_button_skip_minusFO.png</texturefocus>
 				<texturenofocus></texturenofocus>
-				<onclick>XBMC.PlayerControl(Previous)</onclick>
+				<onclick>PlayerControl(Previous)</onclick>
 				<label></label>
 				<font></font>
 				<onleft>215</onleft>
@@ -126,7 +126,7 @@
 				<onright>213</onright>
 				<onup>209</onup>
 				<ondown>921</ondown>
-				<onclick>XBMC.PlayerControl(Rewind)</onclick>
+				<onclick>PlayerControl(Rewind)</onclick>
 			</control>
 			<control type="togglebutton" id="213">
 				<description>Play</description>
@@ -145,7 +145,7 @@
 				<onright>214</onright>
 				<onup>920</onup>
 				<ondown>921</ondown>
-				<onclick>XBMC.PlayerControl(Play)</onclick>
+				<onclick>PlayerControl(Play)</onclick>
 			</control>
 			<control type="togglebutton" id="214">
 				<description>Fast Forward</description>
@@ -164,7 +164,7 @@
 				<onright>215</onright>
 				<onup>920</onup>
 				<ondown>921</ondown>
-				<onclick>XBMC.PlayerControl(Forward)</onclick>
+				<onclick>PlayerControl(Forward)</onclick>
 			</control>
 			<control type="button" id="215">
 				<description>Skip Fwd</description>
@@ -174,7 +174,7 @@
 				<height>72</height>
 				<texturefocus>osd_button_skip_plusFO.png</texturefocus>
 				<texturenofocus></texturenofocus>
-				<onclick>XBMC.PlayerControl(Next)</onclick>
+				<onclick>PlayerControl(Next)</onclick>
 				<label></label>
 				<font></font>
 				<onleft>214</onleft>
@@ -207,7 +207,7 @@
 				<height>66</height>
 				<texturefocus>osd_button_lyricsFO.png</texturefocus>
 				<texturenofocus>osd_button_lyrics.png</texturenofocus>
-				<onclick>XBMC.RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+				<onclick>RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
 				<label></label>
 				<font></font>
 				<onleft>208</onleft>
@@ -227,7 +227,7 @@
 				<usealttexture>Window.IsActive(VisualisationPresetList)</usealttexture>
 				<alttexturefocus>osd_button_presetsSELNF.png</alttexturefocus>
 				<alttexturenofocus></alttexturenofocus>
-				<onclick>XBMC.ActivateWindow(VisualisationPresetList)</onclick>
+				<onclick>ActivateWindow(VisualisationPresetList)</onclick>
 				<label></label>
 				<font></font>
 				<onleft>211</onleft>
@@ -243,7 +243,7 @@
 				<height>69</height>
 				<texturefocus>osd_button_stopFO.png</texturefocus>
 				<texturenofocus></texturenofocus>
-				<onclick>XBMC.PlayerControl(Stop)</onclick>
+				<onclick>PlayerControl(Stop)</onclick>
 				<label></label>
 				<font></font>
 				<onleft>211</onleft>

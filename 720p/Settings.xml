@@ -78,9 +78,25 @@
 						<icon>icon_tv.png</icon>
 					</item>
 					<item>
-						<label>14202</label>
+						<label>14211</label>
 						<onclick>ActivateWindow(MediaSettings)</onclick>
 						<icon>DefaultPlaylist.png</icon>
+					</item>
+					<item>
+						<label>14204</label>
+						<onclick>ActivateWindow(PVRSettings)</onclick>
+						<icon>DefaultTVShows.png</icon>
+					</item>
+					<item>
+						<label>15016</label>
+						<visible>System.GetBool(gamesgeneral.enable)</visible>
+						<onclick>ActivateWindow(GameSettings)</onclick>
+						<icon>DefaultProgram.png</icon>
+					</item>
+					<item>
+						<label>13200</label>
+						<onclick>ActivateWindow(Profiles)</onclick>
+						<icon>unknown-user.png</icon>
 					</item>
 					<item>
 						<label>14206</label>
@@ -91,11 +107,6 @@
 						<label>24001</label>
 						<onclick>ActivateWindow(AddonBrowser)</onclick>
 						<icon>icon_addons.png</icon>
-					</item>
-					<item>
-						<label>13200</label>
-						<onclick>ActivateWindow(Profiles)</onclick>
-						<icon>unknown-user.png</icon>
 					</item>
 					<item>
 						<label>14036</label>

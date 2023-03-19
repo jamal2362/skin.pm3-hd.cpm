@@ -3,48 +3,83 @@
 	<controls>
 		<control type="videowindow" id="20">
 			<description>videowindow</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>1280</width>
 			<height>720</height>
 		</control>
 		<control type="mover" id="8">
 			<description>top left mover</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
+			<width>300</width>
+			<height>300</height>
 			<texturefocus>calibrate-topleft-focus.png</texturefocus>
 			<texturenofocus>calibrate-topleft.png</texturenofocus>
+			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
+				<eventconfig type="up" />
+				<eventconfig type="down" />
+				<eventconfig type="left" />
+				<eventconfig type="right" />
+			</movingspeed>
 		</control>
 		<control type="mover" id="9">
 			<description>right bottom mover</description>
-			<posx>700</posx>
-			<posy>500</posy>
+			<left>700</left>
+			<top>500</top>
+			<width>300</width>
+			<height>300</height>
 			<texturefocus>calibrate-bottomright-focus.png</texturefocus>
 			<texturenofocus>calibrate-bottomright.png</texturenofocus>
+			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
+				<eventconfig type="up" />
+				<eventconfig type="down" />
+				<eventconfig type="left" />
+				<eventconfig type="right" />
+			</movingspeed>
 		</control>
 		<control type="mover" id="10">
 			<description>subtitle position mover</description>
-			<posx>200</posx>
-			<posy>500</posy>
+			<left>200</left>
+			<top>500</top>
 			<texturefocus>calibrate-subtitles-focus.png</texturefocus>
 			<texturenofocus>calibrate-subtitles.png</texturenofocus>
+			<movingspeed acceleration="180" maxvelocity="300" resettimeout="200" delta="1">
+				<eventconfig type="up" />
+				<eventconfig type="down" />
+				<eventconfig type="left" />
+				<eventconfig type="right" />
+			</movingspeed>
 		</control>
 		<control type="resize" id="11">
 			<description>pixel aspect ratio box</description>
-			<posx>0</posx>
-			<posy>270</posy>
+			<left>0</left>
+			<top>270</top>
 			<width>288</width>
 			<height>288</height>
 			<texturefocus>calibrate-pixelratio-focus.png</texturefocus>
 			<texturenofocus>calibrate-pixelratio.png</texturenofocus>
+			<movingspeed acceleration="140" maxvelocity="300" resettimeout="180" delta="1">
+				<eventconfig type="left" />
+				<eventconfig type="right" />
+			</movingspeed>
+		</control>
+		<control type="mover" id="12">
+			<description>reset calibration</description>
+			<left>0</left>
+			<top>900</top>
+			<width>150</width>
+			<height>150</height>
+			<texturefocus>icon_reset.png</texturefocus>
+			<texturenofocus colordiffuse="grey3">icon_reset.png</texturenofocus>
 		</control>
 		<control type="group">
-			<posx>240</posx>
-			<posy>60</posy>
+			<left>240</left>
+			<top>60</top>
 			<control type="image" id="1">
 				<description>rectangle image</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>800</width>
 				<height>80</height>
 				<colordiffuse>AAFFFFFF</colordiffuse>
@@ -52,8 +87,8 @@
 			</control>
 			<control type="image" id="1">
 				<description>rectangle image</description>
-				<posx>5</posx>
-				<posy>5</posy>
+				<left>5</left>
+				<top>5</top>
 				<width>790</width>
 				<height>70</height>
 				<colordiffuse>BBFFFFFF</colordiffuse>
@@ -62,8 +97,8 @@
 			</control>
 			<control type="label" id="2">
 				<description>coordinates label</description>
-				<posx>20</posx>
-				<posy>10</posy>
+				<left>20</left>
+				<top>0</top>
 				<width>750</width>
 				<label></label>
 				<align>center</align>
@@ -71,12 +106,21 @@
 			</control>
 			<control type="label" id="3">
 				<description>help information</description>
-				<posx>20</posx>
-				<posy>40</posy>
+				<left>20</left>
+				<top>25</top>
 				<width>750</width>
 				<label></label>
 				<align>center</align>
 				<font>font13</font>
+			</control>
+			<control type="label" id="4">
+				<description>calibration value</description>
+				<left>0</left>
+				<top>75</top>
+				<width>100%</width>
+				<label></label>
+				<align>center</align>
+				<font>font25</font>
 			</control>
 		</control>
 	</controls>

@@ -33,7 +33,7 @@
 				<usealttexture>!System.IsMaster</usealttexture>
 				<alttexturefocus>sub-nomaster-focus.gif</alttexturefocus>
 				<alttexturenofocus>sub-nomaster-nofocus.png</alttexturenofocus>
-				<onclick>xbmc.mastermode</onclick>
+				<onclick>mastermode</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font></font>
 				<visible>System.HasLocks</visible>
@@ -45,7 +45,7 @@
 				<height>81</height>
 				<texturefocus>sub-info-focus.gif</texturefocus>
 				<texturenofocus>sub-info-nofocus.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(7)</onclick>
+				<onclick>ActivateWindow(7)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font></font>
 				<label>130</label>
@@ -72,7 +72,7 @@
 				<texturefocus>sub-exit-focus.gif</texturefocus>
 				<texturenofocus>sub-exit-nofocus.png</texturenofocus>
 				<onclick>dialog.close(all,true)</onclick>
-				<onclick>XBMC.Quit()</onclick>
+				<onclick>Quit()</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font></font>
 				<label>$LOCALIZE[13012] XBMC</label>
@@ -89,7 +89,7 @@
 					<height>81</height>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),30)</onclick>
+					<onclick>AlarmClock(shutdowntimer,Shutdown(),30)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
@@ -106,7 +106,7 @@
 					<height>81</height>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),60)</onclick>
+					<onclick>AlarmClock(shutdowntimer,Shutdown(),60)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
@@ -123,7 +123,7 @@
 					<height>81</height>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),120)</onclick>
+					<onclick>AlarmClock(shutdowntimer,Shutdown(),120)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
@@ -140,7 +140,7 @@
 					<height>81</height>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
+					<onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
@@ -158,7 +158,7 @@
 					<height>81</height>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
+					<onclick>CancelAlarm(shutdowntimer)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
@@ -175,7 +175,7 @@
 					<height>81</height>
 					<texturefocus></texturefocus>
 					<texturenofocus>sub-shutdown-nofocus.png</texturenofocus>
-					<onclick>XBMC.Shutdown()</onclick>
+					<onclick>Shutdown()</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>13</onleft>
 					<onright>15</onright>
@@ -202,7 +202,7 @@
 				<height>81</height>
 				<texturefocus>sub-suspend-focus.gif</texturefocus>
 				<texturenofocus>sub-suspend-nofocus.png</texturenofocus>
-				<onclick>XBMC.Suspend()</onclick>
+				<onclick>Suspend()</onclick>
 				<onclick>dialog.close(all,true)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font></font>
@@ -218,7 +218,7 @@
 				<height>81</height>
 				<texturefocus>sub-suspend-focus.gif</texturefocus>
 				<texturenofocus>sub-suspend-nofocus.png</texturenofocus>
-				<onclick>XBMC.Hibernate()</onclick>
+				<onclick>Hibernate()</onclick>
 				<onclick>dialog.close(all,true)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font></font>
@@ -234,7 +234,7 @@
 				<height>81</height>
 				<texturefocus>sub-favs-focus.gif</texturefocus>
 				<texturenofocus>sub-favs-nofocus.png</texturenofocus>
-				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
+				<onclick>ActivateWindow(Favourites)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font></font>
 				<label>1036</label>
@@ -248,7 +248,7 @@
 				<height>81</height>
 				<texturefocus>sub-reboot-focus.gif</texturefocus>
 				<texturenofocus>sub-reboot-nofocus.png</texturenofocus>
-				<onclick>XBMC.Reset()</onclick>
+				<onclick>Reset()</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font></font>
 				<label>13013</label>
@@ -261,7 +261,7 @@
 				<height>81</height>
 				<texturenofocus>sub-eject-nofocus.png</texturenofocus>
 				<texturefocus>sub-eject-focus.gif</texturefocus>
-				<onclick>XBMC.EjectTray()</onclick>
+				<onclick>EjectTray()</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font></font>
 				<label>$LOCALIZE[13391] $LOCALIZE[155]</label>

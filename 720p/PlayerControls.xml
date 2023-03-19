@@ -27,7 +27,7 @@
 			<onright>401</onright>
 			<onup>400</onup>
 			<ondown>400</ondown>
-			<onclick>XBMC.PlayerControl(Previous)</onclick>
+			<onclick>PlayerControl(Previous)</onclick>
 		</control>
 		<control type="button" id="401">
 			<posx>50</posx>
@@ -41,7 +41,7 @@
 			<onright>402</onright>
 			<onup>401</onup>
 			<ondown>401</ondown>
-			<onclick>XBMC.PlayerControl(Rewind)</onclick>
+			<onclick>PlayerControl(Rewind)</onclick>
 		</control>
 		<control type="button" id="402">
 			<posx>95</posx>
@@ -55,7 +55,7 @@
 			<onright>403</onright>
 			<onup>402</onup>
 			<ondown>402</ondown>
-			<onclick>XBMC.PlayerControl(Stop)</onclick>
+			<onclick>PlayerControl(Stop)</onclick>
 		</control>
 		<control type="togglebutton" id="403">
 			<posx>140</posx>
@@ -72,7 +72,7 @@
 			<onright>404</onright>
 			<onup>403</onup>
 			<ondown>403</ondown>
-			<onclick>XBMC.PlayerControl(Play)</onclick>
+			<onclick>PlayerControl(Play)</onclick>
 		</control>
 		<control type="button" id="404">
 			<posx>185</posx>
@@ -86,7 +86,7 @@
 			<onright>405</onright>
 			<onup>404</onup>
 			<ondown>404</ondown>
-			<onclick>XBMC.PlayerControl(Forward)</onclick>
+			<onclick>PlayerControl(Forward)</onclick>
 		</control>
 		<control type="button" id="405">
 			<posx>230</posx>
@@ -100,7 +100,7 @@
 			<onright>406</onright>
 			<onup>405</onup>
 			<ondown>405</ondown>
-			<onclick>XBMC.PlayerControl(Next)</onclick>
+			<onclick>PlayerControl(Next)</onclick>
 		</control>
 		<control type="button" id="406">
 			<posx>275</posx>
@@ -110,7 +110,7 @@
 			<label></label>
 			<texturefocus></texturefocus>
 			<texturenofocus></texturenofocus>
-			<onclick>XBMC.PlayerControl(Repeat)</onclick>
+			<onclick>PlayerControl(Repeat)</onclick>
 			<onleft>405</onleft>
 			<onright>407</onright>
 			<onup>406</onup>
@@ -181,7 +181,7 @@
 			<usealttexture>Playlist.IsRandom</usealttexture>
 			<alttexturefocus>PlayerControls-RandomOnFO.png</alttexturefocus>
 			<alttexturenofocus>PlayerControls-RandomOnNF.png</alttexturenofocus>
-			<onclick>XBMC.PlayerControl(Random)</onclick>
+			<onclick>PlayerControl(Random)</onclick>
 			<onleft>406</onleft>
 			<onright>400</onright>
 			<onup>407</onup>

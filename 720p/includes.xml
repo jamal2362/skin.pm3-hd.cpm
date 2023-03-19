@@ -2,7 +2,7 @@
 	<include file="defaults.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="ViewsVideoLibrary.xml" />
-	<include file="ViewsMusic.xml" />
+	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
 	<include file="Views3dCoverView.xml" />
 	<include file="ViewsAddonBrowser.xml" />
@@ -151,7 +151,7 @@
 				<onright>601</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<onclick>XBMC.PlayerControl(Previous)</onclick>
+				<onclick>PlayerControl(Previous)</onclick>
 			</control>
 			<control type="button" id="601">
 				<posx>32</posx>
@@ -166,7 +166,7 @@
 				<onup>610</onup>
 				<ondown>611</ondown>
 				<onclick>Up</onclick>
-				<onclick>XBMC.PlayerControl(Stop)</onclick>
+				<onclick>PlayerControl(Stop)</onclick>
 			</control>
 			<control type="togglebutton" id="603">
 				<posx>64</posx>
@@ -183,7 +183,7 @@
 				<onright>602</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<onclick>XBMC.PlayerControl(Play)</onclick>
+				<onclick>PlayerControl(Play)</onclick>
 			</control>
 			<control type="button" id="602">
 				<posx>96</posx>
@@ -197,7 +197,7 @@
 				<onright>604</onright>
 				<onup>610</onup>
 				<ondown>611</ondown>
-				<onclick>XBMC.PlayerControl(Next)</onclick>
+				<onclick>PlayerControl(Next)</onclick>
 			</control>
 			<control type="button" id="604">
 				<posx>128</posx>
@@ -207,7 +207,7 @@
 				<label></label>
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
-				<onclick>XBMC.PlayerControl(Repeat)</onclick>
+				<onclick>PlayerControl(Repeat)</onclick>
 				<onleft>602</onleft>
 				<onright>605</onright>
 				<onup>610</onup>
@@ -278,7 +278,7 @@
 				<usealttexture>Playlist.IsRandom</usealttexture>
 				<alttexturefocus>PlayerControls-RandomOnFO_2.png</alttexturefocus>
 				<alttexturenofocus>PlayerControls-RandomOnNF_2.png</alttexturenofocus>
-				<onclick>XBMC.PlayerControl(Random)</onclick>
+				<onclick>PlayerControl(Random)</onclick>
 				<onleft>604</onleft>
 				<onright>606</onright>
 				<onup>610</onup>

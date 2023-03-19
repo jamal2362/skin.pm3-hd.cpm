@@ -739,7 +739,7 @@
 					<texturefocus border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
-					<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
+					<onclick>Skin.SetAddon(LyricScript_Path,python.lyrics)</onclick>
 					<enable>Skin.HasSetting(LyricScript_Enable)</enable>
 				</control>
 				<control type="image" id="403">
@@ -785,7 +785,7 @@
 					<texturefocus border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
-					<onclick>Skin.SetAddon(WeatherScript_Path,xbmc.python.script)</onclick>
+					<onclick>Skin.SetAddon(WeatherScript_Path,python.script)</onclick>
 					<enable>Skin.HasSetting(WeatherScript_Enable)</enable>
 				</control>
 				<control type="image" id="407">
