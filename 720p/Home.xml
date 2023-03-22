@@ -62,7 +62,7 @@
 				<posy>10</posy>
 				<width>110</width>
 				<height>110</height>
-				<texture>$INFO[Weather.Conditions]</texture>
+				<texture>$INFO[Weather.ConditionsIcon]</texture>
 			</control>
 			<control type="label">
 				<description>Weather label</description>
