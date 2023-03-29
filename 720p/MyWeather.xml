@@ -59,7 +59,7 @@
 					<scroll>true</scroll>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[31007] : [COLOR=green]$INFO[Window.Property(WeatherProvider)][/COLOR]</label>
+					<label>$LOCALIZE[31007]: [COLOR=green]$INFO[Window.Property(WeatherProvider)][/COLOR]</label>
 				</control>
 				<control type="label">
 					<description>current temp Value</description>
@@ -272,7 +272,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[419] :</label>
+					<label>$LOCALIZE[419]:</label>
 					<textcolor>grey2</textcolor>
 					<visible>Weather.IsFetched</visible>
 				</control>
@@ -281,7 +281,7 @@
 					<posx>110</posx>
 					<posy>50</posy>
 					<height>20</height>
-					<label>$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
+					<label> $INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -295,7 +295,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[418] :</label>
+					<label>$LOCALIZE[418]:</label>
 					<textcolor>grey2</textcolor>
 					<visible>Weather.IsFetched</visible>
 				</control>
@@ -304,7 +304,7 @@
 					<posx>290</posx>
 					<posy>50</posy>
 					<height>20</height>
-					<label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
+					<label> $INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -371,7 +371,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[419] :</label>
+					<label>$LOCALIZE[419]:</label>
 					<textcolor>grey2</textcolor>
 					<visible>Weather.IsFetched</visible>
 				</control>
@@ -380,7 +380,7 @@
 					<posx>110</posx>
 					<posy>50</posy>
 					<height>20</height>
-					<label>$INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
+					<label> $INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -394,7 +394,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[418] :</label>
+					<label>$LOCALIZE[418]:</label>
 					<textcolor>grey2</textcolor>
 					<visible>Weather.IsFetched</visible>
 				</control>
@@ -403,7 +403,7 @@
 					<posx>290</posx>
 					<posy>50</posy>
 					<height>20</height>
-					<label>$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
+					<label> $INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -470,7 +470,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[419] :</label>
+					<label>$LOCALIZE[419]:</label>
 					<textcolor>grey2</textcolor>
 					<visible>Weather.IsFetched</visible>
 				</control>
@@ -479,7 +479,7 @@
 					<posx>110</posx>
 					<posy>50</posy>
 					<height>20</height>
-					<label>$INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
+					<label> $INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -493,7 +493,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[418] :</label>
+					<label>$LOCALIZE[418]:</label>
 					<textcolor>grey2</textcolor>
 					<visible>Weather.IsFetched</visible>
 				</control>
@@ -502,7 +502,7 @@
 					<posx>290</posx>
 					<posy>50</posy>
 					<height>20</height>
-					<label>$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
+					<label> $INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -569,7 +569,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[419] :</label>
+					<label>$LOCALIZE[419]:</label>
 					<textcolor>grey2</textcolor>
 					<visible>Weather.IsFetched</visible>
 				</control>
@@ -578,7 +578,7 @@
 					<posx>110</posx>
 					<posy>50</posy>
 					<height>20</height>
-					<label>$INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
+					<label> $INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -592,7 +592,7 @@
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[418] :</label>
+					<label>$LOCALIZE[418]:</label>
 					<textcolor>grey2</textcolor>
 					<visible>Weather.IsFetched</visible>
 				</control>
@@ -601,7 +601,7 @@
 					<posx>290</posx>
 					<posy>50</posy>
 					<height>20</height>
-					<label>$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
+					<label> $INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
 					<font>font12</font>
 					<align>left</align>
 					<aligny>center</aligny>
