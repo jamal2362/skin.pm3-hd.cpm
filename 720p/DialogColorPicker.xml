@@ -1,0 +1,134 @@
+<window type="dialog">
+      <defaultcontrol always="true">6</defaultcontrol>
+      <coordinates>
+            <system>1</system>
+            <posx>335</posx>
+            <posy>35</posy>
+	    <origin x="500" y="35">Window.IsVisible(Visualisation)</origin>
+      </coordinates>
+      <include>dialogeffect</include>
+      <controls>
+            <control type="image">
+                  <description>background image</description>
+                  <posx>0</posx>
+                  <posy>0</posy>
+                  <width>610</width>
+                  <height>650</height>
+                  <texture border="40">DialogBack.png</texture>
+		  <animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(Visualisation)">Conditional</animation>
+            </control>
+            <control type="image">
+                  <description>background image</description>
+                  <posx>0</posx>
+                  <posy>0</posy>
+                  <width>610</width>
+                  <height>650</height>
+                  <texture border="40">DialogFront.png</texture>
+            </control>
+            <control type="label" id="737">
+		  <description>heading label</description>
+		  <posx>40</posx>
+		  <posy>40</posy>
+		  <width>510</width>
+		  <height>30</height>
+		  <align>center</align>
+		  <aligny>center</aligny>
+		  <font>font18</font>
+		  <label>$LOCALIZE[737]</label>
+		  <textcolor>dialogheader</textcolor>
+            </control>
+	    <control type="button">
+		  <description>Close Window button</description>
+		  <posx>540</posx>
+		  <posy>35</posy>
+		  <include>WindowCloseButtonCommons</include>
+	    </control>
+            <control type="image">
+		  <posx>40</posx>
+		  <posy>78</posy>
+		  <width>510</width>
+		  <height>2</height>
+		  <texture>separator.png</texture>
+	    </control>
+	    <control type="label">
+		  <left>45</left>
+		  <top>92</top>
+		  <width>500</width>
+		  <height>35</height>
+		  <align>center</align>
+		  <label>$INFO[Container(6).ListItem.Label,, - ]$INFO[Container(6).ListItem.Label2,#,]</label>
+	    </control>
+	    <control type="panel" id="6">
+		  <description>Color picker panel</description>
+		  <left>45</left>
+		  <top>130</top>
+		  <width>500</width>
+		  <height>434</height>
+		  <onup>6</onup>
+		  <ondown>6</ondown>
+		  <onleft>61</onleft>
+		  <onright>61</onright>
+		  <orientation>vertical</orientation>
+		  <pagecontrol>61</pagecontrol>
+		  <itemlayout height="48" width="80">
+			<control type="image">
+				<top>4</top>
+				<left>8</left>
+				<width>76</width>
+				<height>44</height>
+				<texture border="0">white.png</texture>
+				<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+		  </itemlayout>
+		  <focusedlayout height="48" width="80">
+			<control type="group">
+				<animation effect="zoom" time="200" tween="sine" easing="inout" start="100" end="124" center="auto">Focus</animation>
+				<control type="image">
+					<top>2</top>
+					<left>6</left>
+					<width>80</width>
+					<height>48</height>
+					<texture>color-focus.png</texture>
+				</control>
+				<control type="image">
+					<top>4</top>
+					<left>8</left>
+					<width>76</width>
+					<height>44</height>
+					<texture border="0">white.png</texture>
+					<colordiffuse>$INFO[ListItem.Label2]</colordiffuse>
+					<aspectratio>stretch</aspectratio>
+				</control>
+			</control>
+		  </focusedlayout>
+	    </control>
+	    <control type="scrollbar" id="61">
+		  <posx>550</posx>
+		  <posy>130</posy>
+		  <width>20</width>
+		  <height>434</height>
+		  <texturesliderbackground border="2,2,2,2">scrollbar_bar_back2.png</texturesliderbackground>
+		  <texturesliderbar border="2,16,2,16">scrollbar_bar.png</texturesliderbar>
+		  <texturesliderbarfocus border="2,16,2,16">scrollbar_bar_focus.png</texturesliderbarfocus>
+		  <textureslidernib>scrollbar_nib.png</textureslidernib>
+		  <textureslidernibfocus>scrollbar_nib.png</textureslidernibfocus>
+		  <onleft>6</onleft>
+		  <onright>6</onright>
+		  <orientation>vertical</orientation>
+	    </control>
+	    <control type="label">
+		  <description>number of files/pages in list text label</description>
+		  <posx>570</posx>
+		  <posy>570</posy>
+		  <width>320</width>
+		  <height>35</height>
+		  <font>font12b</font>
+		  <align>right</align>
+		  <aligny>center</aligny>
+		  <scroll>true</scroll>
+		  <textcolor>white</textcolor>
+		  <label>($INFO[Container(6).NumItems]) $LOCALIZE[31025] - $LOCALIZE[31024] ($INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages])</label>
+	    </control>
+      </controls>
+</window>
