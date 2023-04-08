@@ -59,7 +59,7 @@
 					<scroll>true</scroll>
 					<align>center</align>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[31007]: [COLOR=green]$INFO[Window.Property(WeatherProvider)][/COLOR]</label>
+					<label>$LOCALIZE[19101]: [COLOR=green]$INFO[Window.Property(WeatherProvider)][/COLOR]</label>
 				</control>
 				<control type="label">
 					<description>current temp Value</description>

@@ -259,3 +259,15 @@ msgstr "Poista ryhmä"
 msgctxt "#31405"
 msgid "Available[CR]Groups"
 msgstr "Saatavilla olevat[CR]ryhmät"
+
+msgctxt "#31410"
+msgid "Video decoder"
+msgstr "Videodekooderi"
+
+msgctxt "#31411"
+msgid "Pixel format"
+msgstr "Pikselimuoto"
+
+msgctxt "#31412"
+msgid "Audio bitrate"
+msgstr "Äänen bittinopeus"

@@ -324,3 +324,15 @@ msgstr "Auto-play playlist on startup"
 msgctxt "#31409"
 msgid "Edit nodes"
 msgstr "Edit nodes"
+
+msgctxt "#31410"
+msgid "Video decoder"
+msgstr ""
+
+msgctxt "#31411"
+msgid "Pixel format"
+msgstr ""
+
+msgctxt "#31412"
+msgid "Audio bitrate"
+msgstr ""
