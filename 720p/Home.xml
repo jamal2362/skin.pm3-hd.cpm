@@ -732,7 +732,7 @@
 				<label></label>
 				<font></font>
 				<aligny></aligny>
-				<onclick>ActivateWindow(Favourites)</onclick>
+				<onclick>ActivateWindow(favouritesbrowser)</onclick>
 				<texturefocus>home-favourites.png</texturefocus>
 				<texturenofocus>home-favourites.png</texturenofocus>
 				<onleft>22</onleft>

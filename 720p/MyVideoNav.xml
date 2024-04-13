@@ -189,15 +189,16 @@
 					<label>589</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>19</onup>
-					<ondown>17</ondown>
+					<onup>20</onup>
+					<ondown>612</ondown>
 				</control>
-				<control type="radiobutton" id="17">
-					<description>Flatten</description>
+				<control type="button" id="612">
 					<posx>0</posx>
 					<posy>270</posy>
 					<include>ButtonCommonValues</include>
-					<label>20411</label>
+					<label>$LOCALIZE[31055]</label>
+					<onclick>ActivateWindow(videoplaylist)</onclick>
+					<visible>Integer.IsGreater(Playlist.Length(video),0)</visible>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>16</onup>
@@ -211,7 +212,7 @@
 					<label>20336</label>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>17</onup>
+					<onup>612</onup>
 					<ondown>610</ondown>
 					<pulseonselect>no</pulseonselect>
 					<onclick>mastermode</onclick>

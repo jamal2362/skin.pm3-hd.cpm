@@ -1,5 +1,5 @@
 <window>
-	<defaultcontrol always="true">35</defaultcontrol>
+	<defaultcontrol always="true">13</defaultcontrol>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -234,7 +234,7 @@
 				<height>81</height>
 				<texturefocus>sub-favs-focus.gif</texturefocus>
 				<texturenofocus>sub-favs-nofocus.png</texturenofocus>
-				<onclick>ActivateWindow(Favourites)</onclick>
+				<onclick>ActivateWindow(favouritesbrowser)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<font></font>
 				<label>1036</label>

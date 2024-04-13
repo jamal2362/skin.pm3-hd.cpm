@@ -126,15 +126,15 @@ msgstr "Valitse kappale luettelosta"
 
 msgctxt "#31055"
 msgid "Open playlist"
-msgstr "Avaa soittolista"
+msgstr "Avaa toistolista"
 
 msgctxt "#31056"
 msgid "Save playlist"
-msgstr "Tallenna soittolista"
+msgstr "Tallenna toistolista"
 
 msgctxt "#31057"
 msgid "Close playlist"
-msgstr "Sulje soittolista"
+msgstr "Sulje toistolista"
 
 msgctxt "#31058"
 msgid "System music files"
@@ -142,7 +142,7 @@ msgstr "Järjestelmän musiikkitiedostot"
 
 msgctxt "#31059"
 msgid "Current playlist"
-msgstr "Nykyinen soittolista"
+msgstr "Nykyinen toistolista"
 
 msgctxt "#31060"
 msgid "This file is stacked, select the part you want to play from."

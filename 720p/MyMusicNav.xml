@@ -91,7 +91,7 @@
 					<onleft>50</onleft>
 					<onright>4</onright>
 					<onup>2</onup>
-					<ondown>19</ondown>
+					<ondown>8</ondown>
 				</control>
 				<control type="togglebutton" id="4">
 					<description>Sort asc</description>

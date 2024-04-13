@@ -144,6 +144,15 @@
 				<onright>1</onright>
 				<visible>Player.Seeking</visible>
 			</control>
+			<control type="ranges">
+				<description>Chapters</description>
+				<left>10</left>
+				<top>29</top>
+				<width>380</width>
+				<height>4</height>
+				<info>Player.Chapters</info>
+				<righttexture>osd_progress_nib.png</righttexture>
+			</control>
 		</control>
 	</controls>
 </window>

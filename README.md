@@ -1,1 +1,1 @@
-The main goal of this branch is to add Nexus (Kodi 20) support to this very fine skin made by JezzX.
+The main goal of this branch is to keep this skin compatible with the latest stable version of Kodi.

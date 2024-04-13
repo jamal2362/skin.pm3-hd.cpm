@@ -1335,7 +1335,7 @@
 		<control id="500" type="wraplist">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
-			<visible>Container.Content(Albums) | Window.IsVisible(Musicfiles)</visible>
+			<visible>Container.Content(Albums)</visible>
 			<posx>460</posx>
 			<posy>175</posy>
 			<width>366</width>
