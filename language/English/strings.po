@@ -48,19 +48,13 @@ msgctxt "#31007"
 msgid "Data Provider"
 msgstr ""
 
-#empty strings from id 31008 to 31009
-
 msgctxt "#31010"
 msgid "FANART[CR]IMAGE[CR]NOT[CR]AVAILABLE"
 msgstr ""
 
-#empty strings from id 31011 to 31021
-
 msgctxt "#31022"
 msgid "Music - Files"
 msgstr ""
-
-#empty string with id 31023
 
 msgctxt "#31024"
 msgid "Page"
@@ -69,8 +63,6 @@ msgstr ""
 msgctxt "#31025"
 msgid "Items"
 msgstr ""
-
-#empty strings from id 31026 to 31027
 
 msgctxt "#31028"
 msgid "DVD thumbs"
@@ -100,8 +92,6 @@ msgctxt "#31034"
 msgid "Wide icons"
 msgstr ""
 
-#empty strings from id 31035 to 31041
-
 msgctxt "#31042"
 msgid "PLAYING"
 msgstr ""
@@ -130,9 +120,6 @@ msgctxt "#31048"
 msgid "Current artist[CR]Fanart image[CR][CR]Click to change"
 msgstr ""
 
-#empty strings from id 31049 to 31052
-#Lyrics Script Extra labels
-
 msgctxt "#31053"
 msgid "LYRICS"
 msgstr ""
@@ -140,8 +127,6 @@ msgstr ""
 msgctxt "#31054"
 msgid "Choose your song from the list"
 msgstr ""
-
-#Playlist Editor labels
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -167,9 +152,6 @@ msgctxt "#31060"
 msgid "This file is stacked, select the part you want to play from."
 msgstr ""
 
-#empty strings from id 31061 to 31100
-#Skin Settings labels
-
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr ""
@@ -194,13 +176,9 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr ""
 
-#empty strings from id 31107 to 31109
-
 msgctxt "#31110"
 msgid "button - Custom backgrounds"
 msgstr ""
-
-#empty string with id 31111
 
 msgctxt "#31112"
 msgid "Show media titles in \"Wide icons\" view"
@@ -242,14 +220,9 @@ msgctxt "#31121"
 msgid "\"Videos\" button always goes to file mode"
 msgstr ""
 
-#empty strings from id 31122 to 31199
-#Script Settings labels
-
 msgctxt "#31200"
 msgid "Custom Add-on options"
 msgstr ""
-
-#empty strings from id 31201 to 31202
 
 msgctxt "#31203"
 msgid "Set button label"
@@ -258,8 +231,6 @@ msgstr ""
 msgctxt "#31204"
 msgid "Add-on path"
 msgstr ""
-
-#empty strings from id 31205 to 31206
 
 msgctxt "#31207"
 msgid "Show subtitle download button in Video OSD"
@@ -273,9 +244,6 @@ msgctxt "#31209"
 msgid "Enable quick launch Add-on button for -"
 msgstr ""
 
-#empty strings from id 31210 to 31249
-#Subtitles Script Extra labels
-
 msgctxt "#31250"
 msgid "Subtitles"
 msgstr ""
@@ -284,14 +252,9 @@ msgctxt "#31251"
 msgid "Subtitle Source"
 msgstr ""
 
-#empty strings from id 31252 to 31399
-#PVR Labels
-
 msgctxt "#31400"
 msgid "Live TV"
 msgstr ""
-
-#empty string with id 31401
 
 msgctxt "#31402"
 msgid "New Group"
@@ -325,14 +288,262 @@ msgctxt "#31409"
 msgid "Edit nodes"
 msgstr "Edit nodes"
 
-msgctxt "#31410"
-msgid "Video decoder"
+msgctxt "#32000"
+msgid "Display mode"
 msgstr ""
 
-msgctxt "#31411"
+msgctxt "#32001"
+msgid "Video mode"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Color space"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Mb/s"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Bit depth"
+msgstr ""
+
+msgctxt "#32005"
+msgid "Decoder"
+msgstr ""
+
+msgctxt "#32006"
+msgid "VS10 engine"
+msgstr ""
+
+msgctxt "#32007"
+msgid "More"
+msgstr ""
+
+msgctxt "#32008"
+msgid "Video queue"
+msgstr ""
+
+msgctxt "#32009"
+msgid "Video queue data"
+msgstr ""
+
+msgctxt "#32010"
+msgid "Audio queue"
+msgstr ""
+
+msgctxt "#32011"
+msgid "Audio queue data"
+msgstr ""
+
+msgctxt "#32012"
+msgid "Kb/s"
+msgstr ""
+
+msgctxt "#32013"
+msgid "DV metadata"
+msgstr ""
+
+msgctxt "#32014"
+msgid "Processor"
+msgstr ""
+
+msgctxt "#32015"
+msgid "Version"
+msgstr ""
+
+msgctxt "#32016"
+msgid "Profile"
+msgstr ""
+
+msgctxt "#32017"
+msgid "Level"
+msgstr ""
+
+msgctxt "#32018"
+msgid "RPU"
+msgstr ""
+
+msgctxt "#32019"
+msgid "Base Layer"
+msgstr ""
+
+msgctxt "#32020"
+msgid "Enhancement Layer"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Enhancement Layer Type"
+msgstr ""
+
+msgctxt "#32022"
+msgid "Metadata"
+msgstr ""
+
+msgctxt "#32023"
 msgid "Pixel format"
 msgstr ""
 
-msgctxt "#31412"
-msgid "Audio bitrate"
+msgctxt "#32024"
+msgid "Aspect ratio"
+msgstr ""
+
+msgctxt "#32025"
+msgid "HDR10 MDL"
+msgstr ""
+
+msgctxt "#32026"
+msgid "HDR10 MaxCLL/FALL"
+msgstr ""
+
+msgctxt "#32027"
+msgid "Media source"
+msgstr ""
+
+msgctxt "#32028"
+msgid "Unknown"
+msgstr ""
+
+msgctxt "#32029"
+msgid "On"
+msgstr ""
+
+msgctxt "#32030"
+msgid "Off"
+msgstr ""
+
+msgctxt "#32031"
+msgid "Deinterlacing"
+msgstr ""
+
+msgctxt "#32032"
+msgid "Player cache"
+msgstr ""
+
+msgctxt "#32033"
+msgid "N/A"
+msgstr ""
+
+msgctxt "#32034"
+msgid "Memory usage"
+msgstr ""
+
+msgctxt "#32035"
+msgid "Bit depth"
+msgstr ""
+
+msgctxt "#32036"
+msgid "AML FPS"
+msgstr ""
+
+msgctxt "#32037"
+msgid "DV Configuration"
+msgstr ""
+
+msgctxt "#32038"
+msgid "DV Levels Metadata"
+msgstr ""
+
+msgctxt "#32039"
+msgid "HDR Static Metadata"
+msgstr ""
+
+msgctxt "#32040"
+msgid "cd/m²"
+msgstr ""
+
+msgctxt "#32041"
+msgid "RPU MDL"
+msgstr ""
+
+msgctxt "#32042"
+msgid "RPU MaxCLL/FALL"
+msgstr ""
+
+msgctxt "#32043"
+msgid "FLL MIN / MAX / Ø"
+msgstr ""
+
+msgctxt "#32044"
+msgid "PQ  MIN / MAX / Ø"
+msgstr ""
+
+msgctxt "#32045"
+msgid "12-bit"
+msgstr ""
+
+msgctxt "#32046"
+msgid "Codec"
+msgstr ""
+
+msgctxt "#32047"
+msgid "Bitrate"
+msgstr ""
+
+msgctxt "#32048"
+msgid "VS10 status"
+msgstr ""
+
+msgctxt "#32051"
+msgid "Sample rate"
+msgstr ""
+
+msgctxt "#32052"
+msgid "Audio language"
+msgstr ""
+
+msgctxt "#32053"
+msgid "Subtitle language"
+msgstr ""
+
+msgctxt "#32054"
+msgid "Video"
+msgstr ""
+
+msgctxt "#32055"
+msgid "System"
+msgstr ""
+
+msgctxt "#32056"
+msgid "Audio"
+msgstr ""
+
+msgctxt "#32057"
+msgid "Top left"
+msgstr ""
+
+msgctxt "#32058"
+msgid "Top center"
+msgstr ""
+
+msgctxt "#32059"
+msgid "Top right"
+msgstr ""
+
+msgctxt "#32060"
+msgid "Position of the codec logos in the OSD"
+msgstr ""
+
+msgctxt "#32061"
+msgid "Position of the codec logos in the PlayerProcessInfo"
+msgstr ""
+
+msgctxt "#32062"
+msgid "Show codec logos when video starts"
+msgstr ""
+
+msgctxt "#32063"
+msgid "Codec logos"
+msgstr ""
+
+msgctxt "#32064"
+msgid "Original"
+msgstr ""
+
+msgctxt "#32065"
+msgid "VS10 mode"
+msgstr ""
+
+msgctxt "#32066"
+msgid "Coloured title lines in PlayerProcessInfo"
 msgstr ""

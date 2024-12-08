@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1100">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <coordinates>
+        <system>1</system>
+        <posx>420</posx>
+        <posy>200</posy>
+        <origin x="500" y="35">Window.IsVisible(Visualisation)</origin>
+    </coordinates>
+    <include>dialogeffect</include>
+    <controls>
+        <control type="image">
+            <description>background image</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>435</width>
+            <height>255</height>
+            <texture border="40">DialogBack.png</texture>
+            <animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(Visualisation)">Conditional</animation>
+        </control>
+        <control type="image">
+            <description>background image</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>435</width>
+            <height>255</height>
+            <texture border="40">DialogFront.png</texture>
+        </control>
+        <control type="label" id="1">
+            <description>heading label</description>
+            <posx>40</posx>
+            <posy>40</posy>
+            <width>350</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font18</font>
+            <label>444</label>
+            <textcolor>dialogheader</textcolor>
+        </control>
+        <control type="button" id="2310">
+            <description>Close Window button</description>
+            <posx>365</posx>
+            <posy>40</posy>
+            <include>WindowCloseButtonCommons</include>
+        </control>
+        <control type="image">
+            <posx>40</posx>
+            <posy>78</posy>
+            <width>350</width>
+            <height>2</height>
+            <texture>separator.png</texture>
+        </control>
+        <control type="group" id="9000">
+            <control type="button" id="2311">
+                <description>Video settings</description>
+                <posx>40</posx>
+                <posy>90</posy>
+                <width>350</width>
+                <height>35</height>
+                <label>13395</label>
+                <font>font12</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturefocus border="3">button-focus2.png</texturefocus>
+                <texturenofocus border="3">button-nofocus.png</texturenofocus>
+                <onup>2310</onup>
+                <ondown>2312</ondown>
+                <onclick>Dialog.Close(1100)</onclick>
+                <onclick>ActivateWindow(OSDVideoSettings)</onclick>
+                <animation effect="slide" start="0,0" end="0,-120" time="0" condition="Control.IsVisible(6)">Conditional</animation>
+            </control>
+            <control type="button" id="2312">
+                <description>PlayerProcessInfo</description>
+                <posx>40</posx>
+                <posy>130</posy>
+                <width>350</width>
+                <height>35</height>
+                <label>PlayerProcessInfo</label>
+                <font>font12</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturefocus border="3">button-focus2.png</texturefocus>
+                <texturenofocus border="3">button-nofocus.png</texturenofocus>
+                <onup>2311</onup>
+                <ondown>2313</ondown>
+                <onclick>Dialog.Close(all,true)</onclick>
+                <onclick>ActivateWindow(playerprocessinfo)</onclick>
+                <animation effect="slide" start="0,0" end="0,-120" time="0" condition="Control.IsVisible(6)">Conditional</animation>
+            </control>
+            <control type="button" id="2313">
+                <description>VS10 mode</description>
+                <posx>40</posx>
+                <posy>170</posy>
+                <width>350</width>
+                <height>35</height>
+                <label>32065</label>
+                <font>font12</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturefocus border="3">button-focus2.png</texturefocus>
+                <texturenofocus border="3">button-nofocus.png</texturenofocus>
+                <onup>2312</onup>
+                <ondown>2310</ondown>
+                <onclick>Dialog.Close(1100)</onclick>
+                <onclick>ActivateWindow(1101)</onclick>
+                <animation effect="slide" start="0,0" end="0,-120" time="0" condition="Control.IsVisible(6)">Conditional</animation>
+            </control>
+        </control>
+    </controls>
+</window>

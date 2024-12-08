@@ -6,4 +6,8 @@
 	<color name="black">FF000000</color>
 	<color name="green">ffe2ff43</color>
 	<color name="dialogheader">DDced8da</color>
+	<color name="ProcessHeaderTitle">FF7495AB</color>
+	<color name="ProcessTitle">FFBDD6E6</color>
+	<color name="ProcessTextAddition">FFA7C8DE</color>
+	<color name="ProcessText">FFD3E3EF</color>
 </colors>
