@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1101">
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <coordinates>
+        <system>1</system>
+        <posx>420</posx>
+        <posy>200</posy>
+        <origin x="500" y="35">Window.IsVisible(Visualisation)</origin>
+    </coordinates>
+    <include>dialogeffect</include>
+    <controls>
+        <control type="image">
+            <description>background image</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>435</width>
+            <height>295</height>
+            <texture border="40">DialogBack.png</texture>
+            <animation effect="fade" start="90" end="90" time="0" condition="Window.IsVisible(Visualisation)">Conditional</animation>
+        </control>
+        <control type="image">
+            <description>background image</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>435</width>
+            <height>295</height>
+            <texture border="40">DialogFront.png</texture>
+        </control>
+        <control type="label" id="1">
+            <description>heading label</description>
+            <posx>40</posx>
+            <posy>40</posy>
+            <width>350</width>
+            <height>30</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font18</font>
+            <label>32065</label>
+            <textcolor>dialogheader</textcolor>
+        </control>
+        <control type="button" id="2310">
+            <description>Close Window button</description>
+            <posx>365</posx>
+            <posy>40</posy>
+            <include>WindowCloseButtonCommons</include>
+        </control>
+        <control type="image">
+            <posx>40</posx>
+            <posy>78</posy>
+            <width>350</width>
+            <height>2</height>
+            <texture>separator.png</texture>
+        </control>
+        <control type="group" id="9000">
+            <control type="button" id="2311">
+                <description>Original</description>
+                <posx>40</posx>
+                <posy>90</posy>
+                <width>350</width>
+                <height>35</height>
+                <font>font12</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturefocus border="3">button-focus2.png</texturefocus>
+                <texturenofocus border="3">button-nofocus.png</texturenofocus>
+                <onup>2310</onup>
+                <ondown>2312</ondown>
+                <label>$LOCALIZE[32064]</label>
+                <selected>Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),5) | [[Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),0) | Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),1)] + String.Contains(Player.Process(video.hdr.type),Dolby)]</selected>
+                <onclick>Action(vs10.original)</onclick>
+                <onclick>Dialog.Close(1101)</onclick>
+                <animation effect="slide" start="0,0" end="0,-120" time="0" condition="Control.IsVisible(6)">Conditional</animation>
+            </control>
+            <control type="button" id="2312">
+                <description>VS10 SDR</description>
+                <posx>40</posx>
+                <posy>130</posy>
+                <width>350</width>
+                <height>35</height>
+                <font>font12</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturefocus border="3">button-focus2.png</texturefocus>
+                <texturenofocus border="3">button-nofocus.png</texturenofocus>
+                <onup>2311</onup>
+                <ondown>2313</ondown>
+                <label>VS10 SDR</label>
+                <selected>Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),3)</selected>
+                <onclick>Action(vs10.sdr)</onclick>
+                <onclick>Dialog.Close(1101)</onclick>
+                <animation effect="slide" start="0,0" end="0,-120" time="0" condition="Control.IsVisible(6)">Conditional</animation>
+            </control>
+            <control type="button" id="2313">
+                <description>VS10 HDR</description>
+                <posx>40</posx>
+                <posy>170</posy>
+                <width>350</width>
+                <height>35</height>
+                <font>font12</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturefocus border="3">button-focus2.png</texturefocus>
+                <texturenofocus border="3">button-nofocus.png</texturenofocus>
+                <onup>2312</onup>
+                <ondown>2314</ondown>
+                <label>VS10 HDR10</label>
+                <visible>[String.Contains(Player.Process(video.hdr.type),SDR) | String.Contains(Player.Process(video.hdr.type),HLG)]</visible>
+                <selected>Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),2)</selected>
+                <onclick>Action(vs10.hdr10)</onclick>
+                <onclick>Dialog.Close(1101)</onclick>
+                <animation effect="slide" start="0,0" end="0,-120" time="0" condition="Control.IsVisible(6)">Conditional</animation>
+            </control>
+            <control type="button" id="2314">
+                <description>VS10 Dolby Vision</description>
+                <posx>40</posx>
+                <posy>210</posy>
+                <width>350</width>
+                <height>35</height>
+                <font>font12</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturefocus border="3">button-focus2.png</texturefocus>
+                <texturenofocus border="3">button-nofocus.png</texturenofocus>
+                <onup>2313</onup>
+                <ondown>2310</ondown>
+                <visible>String.Contains(Player.Process(video.hdr.type),SDR) | String.Contains(Player.Process(video.hdr.type),HDR)</visible>
+                <label>VS10 Dolby Vision</label>
+                <selected>[Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),0) | Integer.IsEqual(Player.Process(amlogic.vs10.mode.raw),1)] + !String.Contains(Player.Process(video.hdr.type),Dolby)</selected>
+                <onclick>Action(vs10.dv)</onclick>
+                <onclick>Dialog.Close(1101)</onclick>
+                <animation effect="slide" start="0,0" end="0,-120" time="0" condition="Control.IsVisible(6)">Conditional</animation>
+            </control>
+        </control>
+    </controls>
+</window>

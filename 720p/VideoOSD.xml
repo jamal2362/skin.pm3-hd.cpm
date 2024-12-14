@@ -23,34 +23,11 @@
 			<defaultcontrol>202</defaultcontrol>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
 			<control type="group">
-				<posx>80r</posx>
+				<posx>-30</posx>
 				<posy>-320</posy>
-				<width>36</width>
-				<height>32</height>
-				<visible>system.getbool(input.enablemouse)</visible>
-				<control type="image">
-					<description>Button background image</description>
-					<posx>-5</posx>
-					<posy>0</posy>
-					<width>42</width>
-					<height>32</height>
-					<texture border="3">black-back2.png</texture>
-				</control>
-				<control type="button">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>32</width>
-					<height>28</height>
-					<label></label>
-					<texturefocus>PlayerControls-FullScreenFO.png</texturefocus>
-					<texturenofocus>PlayerControls-FullScreenNF.png</texturenofocus>
-					<onleft>603</onleft>
-					<onright>600</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<onclick>Dialog.Close(VideoOSD,true)</onclick>
-					<onclick>FullScreen</onclick>
-				</control>
+				<include condition="Skin.HasSetting(osd.useleftCodecLogos)">CodecLogosLeftOSD</include>
+				<include condition="Skin.HasSetting(osd.usecenterCodecLogos)">CodecLogosCenterOSD</include>
+				<include condition="Skin.HasSetting(osd.userightCodecLogos)">CodecLogosRightOSD</include>
 			</control>
 			<control type="group">
 			<!-- Buttons for non PVR mode -->
@@ -234,7 +211,7 @@
 					<alttexturefocus>osd_button_audioSELNF.png</alttexturefocus>
 					<alttexturenofocus></alttexturenofocus>
 					<onclick>ActivateWindow(OSDAudioSettings)</onclick>
-                                        <onclick>ActivateWindow(OSDSubtitleSettings)</onclick>
+					<onclick>ActivateWindow(OSDSubtitleSettings)</onclick>
 					<label></label>
 					<font></font>
 					<onleft>210</onleft>
@@ -253,7 +230,7 @@
 					<usealttexture>Window.IsActive(OSDVideoSettings)</usealttexture>
 					<alttexturefocus>osd_button_videoSELNF.png</alttexturefocus>
 					<alttexturenofocus></alttexturenofocus>
-					<onclick>ActivateWindow(OSDVideoSettings)</onclick>
+					<onclick>ActivateWindow(1100)</onclick>
 					<label></label>
 					<font></font>
 					<onleft>209</onleft>
