@@ -63,18 +63,13 @@
 			<aspect>.8</aspect>
 		</font>
 		<font>
-			<name>OpenSansSemiCondensed</name>
-			<filename>OpenSans_SemiCondensed-Medium.ttf</filename>
+			<name>font_tiny</name>
+			<filename>Inter-Unicode-Regular.ttf</filename>
 			<size>14</size>
 		</font>
 		<font>
-			<name>ArialUni</name>
-			<filename>arialuni.ttf</filename>
-			<size>26</size>
-		</font>
-		<font>
-			<name>ArialUniSmall</name>
-			<filename>arialuni.ttf</filename>
+			<name>font_tiny_iconic</name>
+			<filename>fa-solid-900.ttf</filename>
 			<size>15</size>
 		</font>
 	</fontset>
@@ -144,18 +139,13 @@
 			<aspect>.8</aspect>
 		</font>
 		<font>
-			<name>OpenSansSemiCondensed</name>
-			<filename>OpenSans_SemiCondensed-Medium.ttf</filename>
+			<name>font_tiny</name>
+			<filename>Inter-Unicode-Regular.ttf</filename>
 			<size>14</size>
 		</font>
 		<font>
-			<name>ArialUni</name>
-			<filename>arialuni.ttf</filename>
-			<size>26</size>
-		</font>
-		<font>
-			<name>ArialUniSmall</name>
-			<filename>arialuni.ttf</filename>
+			<name>font_tiny_iconic</name>
+			<filename>fa-solid-900.ttf</filename>
 			<size>15</size>
 		</font>
 	</fontset>

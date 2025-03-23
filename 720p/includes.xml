@@ -85,32 +85,32 @@
 
 	<variable name="DVELVar">
 		<value condition="String.Contains(Player.Process(video.dovi.el.type),minimum)">[COLOR orange] MEL[/COLOR]</value>
-		<value condition="String.Contains(Player.Process(video.dovi.el.type),full)">[COLOR lightgreen] FEL[/COLOR]</value>
+		<value condition="String.Contains(Player.Process(video.dovi.el.type),full)">[COLOR palegreen] FEL[/COLOR]</value>
 		<value condition="String.IsEqual(Player.Process(video.dovi.el.type),none)" />
 	</variable>
 
 	<variable name="DVELVar1">
-		<value condition="String.Contains(Player.Process(video.dovi.el.type),)">[COLOR red]●[/COLOR]</value>
+		<value condition="String.Contains(Player.Process(video.dovi.el.type),)">[COLOR tomato][/COLOR]</value>
 	</variable>
 
 	<variable name="RPUPresentVar">
-		<value condition="String.IsEqual(Player.Process(video.dovi.rpu.present),1)">[COLOR lightgreen]●[/COLOR]</value>
-		<value>[COLOR red]●[/COLOR]</value>
+		<value condition="String.IsEqual(Player.Process(video.dovi.rpu.present),1)">[COLOR palegreen][/COLOR]</value>
+		<value>[COLOR tomato][/COLOR]</value>
 	</variable>
 
 	<variable name="BLPresentVar">
-		<value condition="String.IsEqual(Player.Process(video.dovi.bl.present),1)">[COLOR lightgreen]●[/COLOR]</value>
-		<value>[COLOR red]●[/COLOR]</value>
+		<value condition="String.IsEqual(Player.Process(video.dovi.bl.present),1)">[COLOR palegreen][/COLOR]</value>
+		<value>[COLOR tomato][/COLOR]</value>
 	</variable>
 
 	<variable name="ELPresentVar">
-		<value condition="String.IsEqual(Player.Process(video.dovi.el.present),1)">[COLOR lightgreen]●[/COLOR]</value>
-		<value>[COLOR red]●[/COLOR]</value>
+		<value condition="String.IsEqual(Player.Process(video.dovi.el.present),1)">[COLOR palegreen][/COLOR]</value>
+		<value>[COLOR tomato][/COLOR]</value>
 	</variable>
 
 	<variable name="ELSourcePresentVar">
-		<value condition="String.IsEqual(Player.Process(video.source.dovi.el.present),1)">[COLOR 8016a34a]●[/COLOR]</value>
-		<value>[COLOR red]●[/COLOR]</value>
+		<value condition="String.IsEqual(Player.Process(video.source.dovi.el.present),1)">[COLOR 8098FB98][/COLOR]</value>
+		<value>[COLOR 80FF6347][/COLOR]</value>
 	</variable>
 
 	<variable name="VideoConvVar">
@@ -130,11 +130,11 @@
 	</variable>
 
 	<variable name="VS10ModeVar">
-		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),Bypass)">[COLOR red]●[/COLOR]</value>
-		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)">[COLOR lightgreen]●[/COLOR]</value>
-		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),HDR10)">[COLOR lightgreen]●[/COLOR]</value>
-		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),SDR)">[COLOR lightgreen]●[/COLOR]</value>
-		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),)">[COLOR orange]●[/COLOR]</value>
+		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),Bypass)">[COLOR tomato][/COLOR]</value>
+		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)">[COLOR palegreen][/COLOR]</value>
+		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),HDR10)">[COLOR palegreen][/COLOR]</value>
+		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),SDR)">[COLOR palegreen][/COLOR]</value>
+		<value condition="String.Contains(Player.Process(amlogic.vs10.mode),)">[COLOR tomato][/COLOR]</value>
 	</variable>
 
 	<variable name="DVTunnelVar">
@@ -154,10 +154,13 @@
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,cdda)">CDDA</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dca)">DTS</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dolbydigital)">Dolby Digital</value>
+		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd)">DTS-HD</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)">DTS-HD MA</value>
-		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dtsma)">DTS-HD MA</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra)">DTS-HD HRA</value>
+		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)">DTS:X MA</value>
+		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)">DTS:X</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,eac3)">Dolby Digital Plus</value>
+		<value condition="String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)">Dolby Digital Plus</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,flac)">FLAC</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,mp1)">MP1</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,mp2)">MP2</value>
@@ -170,12 +173,19 @@
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le)">PCM</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le)">PCM</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,truehd)">Dolby TrueHD</value>
+		<value condition="String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)">Dolby TrueHD</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,vorbis)">Vorbis</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,wav)">WAV</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,wavpack)">WAVP</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,wmapro)">WMA-PRO</value>
 		<value condition="String.IsEqual(VideoPlayer.AudioCodec,wmav2)">WMA</value>
 		<value condition="String.IsEmpty(VideoPlayer.AudioCodec)">$LOCALIZE[13205]</value>
+	</variable>
+
+	<variable name="AudioCodecSpatialVar">
+		<value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)">(IMAX)</value>
+		<value condition="String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)">(Atmos)</value>
+		<value condition="String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)">(Atmos)</value>
 	</variable>
 
 	<variable name="AudioChannelsVar">

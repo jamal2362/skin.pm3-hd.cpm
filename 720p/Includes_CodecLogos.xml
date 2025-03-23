@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <include name="CodecLogosLeftPPI">
         <control type="group">
@@ -32,32 +32,32 @@
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 1) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -67,7 +67,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -77,37 +77,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR) | String.Contains(Player.Process(amlogic.vs10.mode),HDR10) | String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)</visible>
+                <top>29</top>
+                <left>128</left>
+                <control type="image">
+                    <width>5</width>
+                    <height>5</height>
+                    <texture colordiffuse="AB16A34A">codecs/VS10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),HDR10)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + !String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) + !String.Contains(Player.Process(amlogic.vs10.mode),SDR) + !String.Contains(Player.Process(amlogic.vs10.mode),HLG)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -117,7 +127,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -127,11 +137,11 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtsma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.Contains(Player.Process(audio.is.dolby.atmos), Atmos) | String.Contains(Player.Process(audio.dts.x.type), DTS) | String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>80</top>
                 <left>10</left>
                 <control type="image">
@@ -146,18 +156,18 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/PCM.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/PCM.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm)</visible>
-                <top>96</top>
+                <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>26</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/AAC.png</texture>
+                    <height>37</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/AAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -167,47 +177,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital_Plus.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,eac3) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_TrueHD.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,truehd) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -216,28 +226,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/MP3.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/MP3.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,dca)</visible>
                 <top>100</top>
-                <left>36</left>
+                <left>37</left>
                 <control type="image">
-                    <width>66</width>
-                    <height>16</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS.png</texture>
+                    <width>67</width>
+                    <height>17</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + !String.Contains(Player.Process(audio.dts.x.type), DTS) + !String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-MA.png</texture>
+                    <height>31</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-MA.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -246,28 +256,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-HRA.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-HRA.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), DTS)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)</visible>
                 <top>98</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>20</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTSX.png</texture>
+                    <height>21</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTSX.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/IMAX.png</texture>
+                    <height>32</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/IMAX.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -277,7 +287,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/FLAC.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/FLAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -287,15 +297,14 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/OPUS.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
         </control>
     </include>
-
     <include name="CodecLogosLeftOSD">
         <control type="group">
-            <include>Animation.FadeIn</include>
+            <include>Animation_FadeIn</include>
             <include>Animation_FadeOut</include>
             <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
             <left>23</left>
@@ -328,32 +337,32 @@
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 1) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -363,7 +372,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -373,37 +382,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR) | String.Contains(Player.Process(amlogic.vs10.mode),HDR10) | String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)</visible>
+                <top>29</top>
+                <left>128</left>
+                <control type="image">
+                    <width>5</width>
+                    <height>5</height>
+                    <texture colordiffuse="AB16A34A">codecs/VS10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),HDR10)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + !String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) + !String.Contains(Player.Process(amlogic.vs10.mode),SDR) + !String.Contains(Player.Process(amlogic.vs10.mode),HLG)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -413,7 +432,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -423,11 +442,11 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtsma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.Contains(Player.Process(audio.is.dolby.atmos), Atmos) | String.Contains(Player.Process(audio.dts.x.type), DTS) | String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>80</top>
                 <left>10</left>
                 <control type="image">
@@ -442,18 +461,18 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/PCM.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/PCM.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm)</visible>
-                <top>96</top>
+                <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>26</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/AAC.png</texture>
+                    <height>37</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/AAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -463,47 +482,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital_Plus.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,eac3) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_TrueHD.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,truehd) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -512,28 +531,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/MP3.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/MP3.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,dca)</visible>
                 <top>100</top>
-                <left>36</left>
+                <left>37</left>
                 <control type="image">
-                    <width>66</width>
-                    <height>16</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS.png</texture>
+                    <width>67</width>
+                    <height>17</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + !String.Contains(Player.Process(audio.dts.x.type), DTS) + !String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-MA.png</texture>
+                    <height>31</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-MA.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -542,28 +561,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-HRA.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-HRA.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), DTS)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)</visible>
                 <top>98</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>20</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTSX.png</texture>
+                    <height>21</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTSX.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/IMAX.png</texture>
+                    <height>32</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/IMAX.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -573,7 +592,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/FLAC.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/FLAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -583,12 +602,11 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/OPUS.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
         </control>
     </include>
-
     <include name="CodecLogosCenterPPI">
         <control type="group">
             <left>570</left>
@@ -621,32 +639,32 @@
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 1) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -656,7 +674,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -666,37 +684,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR) | String.Contains(Player.Process(amlogic.vs10.mode),HDR10) | String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)</visible>
+                <top>29</top>
+                <left>128</left>
+                <control type="image">
+                    <width>5</width>
+                    <height>5</height>
+                    <texture colordiffuse="AB16A34A">codecs/VS10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),HDR10)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + !String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) + !String.Contains(Player.Process(amlogic.vs10.mode),SDR) + !String.Contains(Player.Process(amlogic.vs10.mode),HLG)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -706,7 +734,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -716,11 +744,11 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtsma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.Contains(Player.Process(audio.is.dolby.atmos), Atmos) | String.Contains(Player.Process(audio.dts.x.type), DTS) | String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>80</top>
                 <left>10</left>
                 <control type="image">
@@ -735,18 +763,18 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/PCM.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/PCM.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm)</visible>
-                <top>96</top>
+                <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>26</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/AAC.png</texture>
+                    <height>37</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/AAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -756,47 +784,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital_Plus.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,eac3) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_TrueHD.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,truehd) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -805,28 +833,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/MP3.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/MP3.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,dca)</visible>
                 <top>100</top>
-                <left>36</left>
+                <left>37</left>
                 <control type="image">
-                    <width>66</width>
-                    <height>16</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS.png</texture>
+                    <width>67</width>
+                    <height>17</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + !String.Contains(Player.Process(audio.dts.x.type), DTS) + !String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-MA.png</texture>
+                    <height>31</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-MA.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -835,28 +863,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-HRA.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-HRA.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), DTS)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)</visible>
                 <top>98</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>20</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTSX.png</texture>
+                    <height>21</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTSX.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/IMAX.png</texture>
+                    <height>32</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/IMAX.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -866,7 +894,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/FLAC.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/FLAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -876,15 +904,14 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/OPUS.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
         </control>
     </include>
-
     <include name="CodecLogosCenterOSD">
         <control type="group">
-            <include>Animation.FadeIn</include>
+            <include>Animation_FadeIn</include>
             <include>Animation_FadeOut</include>
             <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
             <left>570</left>
@@ -917,32 +944,32 @@
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 1) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -952,7 +979,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -962,37 +989,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR) | String.Contains(Player.Process(amlogic.vs10.mode),HDR10) | String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)</visible>
+                <top>29</top>
+                <left>128</left>
+                <control type="image">
+                    <width>5</width>
+                    <height>5</height>
+                    <texture colordiffuse="AB16A34A">codecs/VS10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),HDR10)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + !String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) + !String.Contains(Player.Process(amlogic.vs10.mode),SDR) + !String.Contains(Player.Process(amlogic.vs10.mode),HLG)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1002,7 +1039,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1012,11 +1049,11 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtsma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.Contains(Player.Process(audio.is.dolby.atmos), Atmos) | String.Contains(Player.Process(audio.dts.x.type), DTS) | String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>80</top>
                 <left>10</left>
                 <control type="image">
@@ -1031,18 +1068,18 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/PCM.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/PCM.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm)</visible>
-                <top>96</top>
+                <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>26</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/AAC.png</texture>
+                    <height>37</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/AAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1052,47 +1089,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital_Plus.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,eac3) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_TrueHD.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,truehd) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1101,28 +1138,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/MP3.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/MP3.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,dca)</visible>
                 <top>100</top>
-                <left>36</left>
+                <left>37</left>
                 <control type="image">
-                    <width>66</width>
-                    <height>16</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS.png</texture>
+                    <width>67</width>
+                    <height>17</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + !String.Contains(Player.Process(audio.dts.x.type), DTS) + !String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-MA.png</texture>
+                    <height>31</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-MA.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1131,28 +1168,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-HRA.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-HRA.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), DTS)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)</visible>
                 <top>98</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>20</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTSX.png</texture>
+                    <height>21</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTSX.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/IMAX.png</texture>
+                    <height>32</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/IMAX.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1162,7 +1199,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/FLAC.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/FLAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1172,15 +1209,14 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/OPUS.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
         </control>
     </include>
-
     <include name="CodecLogosRightPPI">
         <control type="group">
-            <left>1116</left>
+            <left>1117</left>
             <control type="group">
                 <visible>!String.IsEmpty(Player.Process(video.source.hdr.type.raw)) + !String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                 <top>23</top>
@@ -1210,32 +1246,32 @@
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 1) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1245,7 +1281,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1255,37 +1291,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR) | String.Contains(Player.Process(amlogic.vs10.mode),HDR10) | String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)</visible>
+                <top>29</top>
+                <left>128</left>
+                <control type="image">
+                    <width>5</width>
+                    <height>5</height>
+                    <texture colordiffuse="AB16A34A">codecs/VS10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),HDR10)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + !String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) + !String.Contains(Player.Process(amlogic.vs10.mode),SDR) + !String.Contains(Player.Process(amlogic.vs10.mode),HLG)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1295,7 +1341,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1305,11 +1351,11 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtsma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.Contains(Player.Process(audio.is.dolby.atmos), Atmos) | String.Contains(Player.Process(audio.dts.x.type), DTS) | String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>80</top>
                 <left>10</left>
                 <control type="image">
@@ -1324,18 +1370,18 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/PCM.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/PCM.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm)</visible>
-                <top>96</top>
+                <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>26</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/AAC.png</texture>
+                    <height>37</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/AAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1345,47 +1391,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital_Plus.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,eac3) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_TrueHD.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,truehd) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1394,28 +1440,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/MP3.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/MP3.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,dca)</visible>
                 <top>100</top>
-                <left>36</left>
+                <left>37</left>
                 <control type="image">
-                    <width>66</width>
-                    <height>16</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS.png</texture>
+                    <width>67</width>
+                    <height>17</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + !String.Contains(Player.Process(audio.dts.x.type), DTS) + !String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-MA.png</texture>
+                    <height>31</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-MA.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1424,28 +1470,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-HRA.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-HRA.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), DTS)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)</visible>
                 <top>98</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>20</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTSX.png</texture>
+                    <height>21</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTSX.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/IMAX.png</texture>
+                    <height>32</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/IMAX.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1455,7 +1501,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/FLAC.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/FLAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1465,18 +1511,17 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/OPUS.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
         </control>
     </include>
-
     <include name="CodecLogosRightOSD">
         <control type="group">
-            <include>Animation.FadeIn</include>
+            <include>Animation_FadeIn</include>
             <include>Animation_FadeOut</include>
             <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
-            <left>1116</left>
+            <left>1117</left>
             <control type="group">
                 <visible>!String.IsEmpty(Player.Process(video.source.hdr.type.raw)) + !String.IsEmpty(VideoPlayer.AudioCodec)</visible>
                 <top>23</top>
@@ -1506,32 +1551,32 @@
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 1) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1541,7 +1586,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1551,37 +1596,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
+                </control>
+            </control>
+            <control type="group">
+                <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR) | String.Contains(Player.Process(amlogic.vs10.mode),HDR10) | String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision)</visible>
+                <top>29</top>
+                <left>128</left>
+                <control type="image">
+                    <width>5</width>
+                    <height>5</height>
+                    <texture colordiffuse="AB16A34A">codecs/VS10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),SDR)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/SDR.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/SDR.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.Contains(Player.Process(amlogic.vs10.mode),HDR10)</visible>
-                <top>34</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(Player.Process(video.source.hdr.type.raw), 2) + !String.Contains(Player.Process(amlogic.vs10.mode),Dolby Vision) + !String.Contains(Player.Process(amlogic.vs10.mode),SDR) + !String.Contains(Player.Process(amlogic.vs10.mode),HLG)</visible>
-                <top>43</top>
+                <top>35</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>22</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HDR10Plus.png</texture>
+                    <height>35</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/HDR10Plus.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1591,7 +1646,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Vision.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Vision.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1601,11 +1656,11 @@
                 <control type="image">
                     <width>100</width>
                     <height>28</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/HLG.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/HLG.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtsma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.Contains(Player.Process(audio.is.dolby.atmos), Atmos) | String.Contains(Player.Process(audio.dts.x.type), DTS) | String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm) | String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital) | String.IsEqual(VideoPlayer.AudioCodec,dtshd) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax) | String.IsEqual(VideoPlayer.AudioCodec,eac3) | String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,mp3) | String.IsEqual(VideoPlayer.AudioCodec,mp3float) | String.IsEqual(VideoPlayer.AudioCodec,flac) | String.IsEqual(VideoPlayer.AudioCodec,opus) | String.IsEqual(VideoPlayer.AudioCodec,pcm) | String.IsEqual(VideoPlayer.AudioCodec,pcm_bluray) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s16le) | String.IsEqual(VideoPlayer.AudioCodec,pcm_s24le) | String.IsEqual(VideoPlayer.AudioCodec,truehd) | String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>80</top>
                 <left>10</left>
                 <control type="image">
@@ -1620,18 +1675,18 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/PCM.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/PCM.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,aac) | String.IsEqual(VideoPlayer.AudioCodec,aac_latm)</visible>
-                <top>96</top>
+                <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>26</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/AAC.png</texture>
+                    <height>37</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/AAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1641,47 +1696,47 @@
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Digital_Plus.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,eac3) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd) + !String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,truehd)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_TrueHD.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_TrueHD.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>!String.IsEqual(VideoPlayer.AudioCodec,truehd) + String.Contains(Player.Process(audio.is.dolby.atmos), Atmos)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)</visible>
                 <top>90</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
                     <height>37</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/Dolby_Atmos.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/Dolby_Digital_Plus_Atmos.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1690,28 +1745,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/MP3.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/MP3.png</texture>
                 </control>
             </control>
             <control type="group">
                 <visible>String.IsEqual(VideoPlayer.AudioCodec,dca)</visible>
                 <top>100</top>
-                <left>36</left>
+                <left>37</left>
                 <control type="image">
-                    <width>66</width>
-                    <height>16</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS.png</texture>
+                    <width>67</width>
+                    <height>17</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + !String.Contains(Player.Process(audio.dts.x.type), DTS) + !String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-MA.png</texture>
+                    <height>31</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-MA.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1720,28 +1775,28 @@
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>32</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTS-HD-HRA.png</texture>
+                    <height>33</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTS-HD-HRA.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), DTS)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)</visible>
                 <top>98</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>20</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/DTSX.png</texture>
+                    <height>21</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/DTSX.png</texture>
                 </control>
             </control>
             <control type="group">
-                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma) + String.Contains(Player.Process(audio.dts.x.type), IMAX)</visible>
+                <visible>String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)</visible>
                 <top>93</top>
                 <left>20</left>
                 <control type="image">
                     <width>100</width>
-                    <height>34</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/IMAX.png</texture>
+                    <height>32</height>
+                    <texture colordiffuse="dialog_fg_90">codecs/IMAX.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1751,7 +1806,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/FLAC.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/FLAC.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -1761,7 +1816,7 @@
                 <control type="image">
                     <width>100</width>
                     <height>30</height>
-                    <texture colordiffuse="FFD3E3EF">codecs/OPUS.png</texture>
+                    <texture colordiffuse="dialog_fg_90">codecs/OPUS.png</texture>
                 </control>
             </control>
         </control>
@@ -1836,10 +1891,10 @@
         <definition>
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
-                    <top>34</top>
+                    <top>35</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>34</height>
+                    <height>35</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -1857,10 +1912,10 @@
         <definition>
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
-                    <top>34</top>
+                    <top>35</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>34</height>
+                    <height>35</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -1878,10 +1933,10 @@
         <definition>
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
-                    <top>43</top>
+                    <top>35</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>22</height>
+                    <height>35</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -1932,6 +1987,27 @@
         </definition>
     </include>
 	
+    <include name="VS10_Indicator_Flag">
+        <param name="groupId" />
+        <param name="imageId" />
+        <param name="visible" />
+        <param name="texture" />
+        <param name="colordiffuse" />
+        <definition>
+            <control type="group" id="$PARAM[groupId]">
+                <control type="image" id="$PARAM[imageId]">
+                    <top>29</top>
+                    <left>128</left>
+                    <width>5</width>
+                    <height>5</height>
+                    <visible>$PARAM[visible]</visible>
+                    <texture>$PARAM[texture]</texture>
+                    <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
+                </control>
+            </control>
+        </definition>
+    </include>
+	
     <include name="VS10_SDR_Flag">
         <param name="groupId" />
         <param name="imageId" />
@@ -1941,10 +2017,10 @@
         <definition>
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
-                    <top>34</top>
+                    <top>35</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>34</height>
+                    <height>35</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -1962,10 +2038,10 @@
         <definition>
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
-                    <top>34</top>
+                    <top>35</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>34</height>
+                    <height>35</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -1983,10 +2059,10 @@
         <definition>
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
-                    <top>43</top>
+                    <top>35</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>22</height>
+                    <height>35</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -2070,7 +2146,7 @@
                     <top>93</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>32</height>
+                    <height>33</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -2088,10 +2164,10 @@
         <definition>
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
-                    <top>96</top>
+                    <top>90</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>26</height>
+                    <height>37</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -2217,7 +2293,7 @@
                     <top>93</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>32</height>
+                    <height>33</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -2236,9 +2312,9 @@
             <control type="group" id="$PARAM[groupId]">
                 <control type="image" id="$PARAM[imageId]">
                     <top>100</top>
-                    <left>36</left>
-                    <width>66</width>
-                    <height>16</height>
+                    <left>37</left>
+                    <width>67</width>
+                    <height>17</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -2259,7 +2335,7 @@
                     <top>93</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>30</height>
+                    <height>31</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -2280,7 +2356,7 @@
                     <top>93</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>32</height>
+                    <height>33</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -2301,7 +2377,7 @@
                     <top>98</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>20</height>
+                    <height>21</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
@@ -2322,7 +2398,7 @@
                     <top>93</top>
                     <left>20</left>
                     <width>100</width>
-                    <height>34</height>
+                    <height>32</height>
                     <visible>$PARAM[visible]</visible>
                     <texture>$PARAM[texture]</texture>
                     <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
