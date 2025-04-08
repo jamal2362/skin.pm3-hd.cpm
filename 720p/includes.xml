@@ -44,6 +44,16 @@
 		<value condition="Player.Process(videohwdecoder)">HW</value>
 		<value>SW</value>
 	</variable>
+	
+	<variable name="SubtitleVar">
+		<value condition="String.IsEmpty(VideoPlayer.SubtitlesLanguage)">$INFO[VideoPlayer.SubtitlesLangEx]</value>
+		<value condition="!String.IsEmpty(VideoPlayer.SubtitlesLanguage)">[UPPERCASE]$INFO[VideoPlayer.SubtitlesLanguage][/UPPERCASE]</value>
+	</variable>
+	
+	<variable name="SubtitleNameVar">
+		<value condition="String.IsEmpty(VideoPlayer.SubtitlesName)"></value>
+		<value condition="!String.IsEmpty(VideoPlayer.SubtitlesName)">$INFO[VideoPlayer.SubtitlesName,| ,, (,)]</value>
+	</variable>
 
 	<variable name="OSDCodecLogosStartupLabel">
 		<value condition="Skin.HasSetting(osd.useleftCodecStartupLogos)">$LOCALIZE[32057]</value>

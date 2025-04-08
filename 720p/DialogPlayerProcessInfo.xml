@@ -648,10 +648,13 @@
                 <control type="label">
                     <left>240</left>
                     <top>93</top>
-                    <label>$INFO[VideoPlayer.SubtitlesName]</label>
+                    <width>180</width>
+                    <label>$VAR[SubtitleVar] $VAR[SubtitleNameVar]</label>
                     <font>font_tiny</font>
+                    <scroll>true</scroll>
                     <textcolor>dialog_fg_90</textcolor>
                     <visible>VideoPlayer.SubtitlesEnabled</visible>
+                    <visible>VideoPlayer.HasSubtitles</visible>
                 </control>
                 <!-- Disabled -->
                 <control type="label">
