@@ -48,13 +48,19 @@ msgctxt "#31007"
 msgid "Data Provider"
 msgstr ""
 
+#empty strings from id 31008 to 31009
+
 msgctxt "#31010"
 msgid "FANART[CR]IMAGE[CR]NOT[CR]AVAILABLE"
 msgstr ""
 
+#empty strings from id 31011 to 31021
+
 msgctxt "#31022"
 msgid "Music - Files"
 msgstr ""
+
+#empty string with id 31023
 
 msgctxt "#31024"
 msgid "Page"
@@ -63,6 +69,8 @@ msgstr ""
 msgctxt "#31025"
 msgid "Items"
 msgstr ""
+
+#empty strings from id 31026 to 31027
 
 msgctxt "#31028"
 msgid "DVD thumbs"
@@ -92,6 +100,8 @@ msgctxt "#31034"
 msgid "Wide icons"
 msgstr ""
 
+#empty strings from id 31035 to 31041
+
 msgctxt "#31042"
 msgid "PLAYING"
 msgstr ""
@@ -120,6 +130,9 @@ msgctxt "#31048"
 msgid "Current artist[CR]Fanart image[CR][CR]Click to change"
 msgstr ""
 
+#empty strings from id 31049 to 31052
+#Lyrics Script Extra labels
+
 msgctxt "#31053"
 msgid "LYRICS"
 msgstr ""
@@ -127,6 +140,8 @@ msgstr ""
 msgctxt "#31054"
 msgid "Choose your song from the list"
 msgstr ""
+
+#Playlist Editor labels
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -152,6 +167,9 @@ msgctxt "#31060"
 msgid "This file is stacked, select the part you want to play from."
 msgstr ""
 
+#empty strings from id 31061 to 31100
+#Skin Settings labels
+
 msgctxt "#31101"
 msgid "Home screen options"
 msgstr ""
@@ -176,9 +194,13 @@ msgctxt "#31106"
 msgid "Miscellaneous options"
 msgstr ""
 
+#empty strings from id 31107 to 31109
+
 msgctxt "#31110"
 msgid "button - Custom backgrounds"
 msgstr ""
+
+#empty string with id 31111
 
 msgctxt "#31112"
 msgid "Show media titles in \"Wide icons\" view"
@@ -220,9 +242,14 @@ msgctxt "#31121"
 msgid "\"Videos\" button always goes to file mode"
 msgstr ""
 
+#empty strings from id 31122 to 31199
+#Script Settings labels
+
 msgctxt "#31200"
 msgid "Custom Add-on options"
 msgstr ""
+
+#empty strings from id 31201 to 31202
 
 msgctxt "#31203"
 msgid "Set button label"
@@ -231,6 +258,8 @@ msgstr ""
 msgctxt "#31204"
 msgid "Add-on path"
 msgstr ""
+
+#empty strings from id 31205 to 31206
 
 msgctxt "#31207"
 msgid "Show subtitle download button in Video OSD"
@@ -244,6 +273,9 @@ msgctxt "#31209"
 msgid "Enable quick launch Add-on button for -"
 msgstr ""
 
+#empty strings from id 31210 to 31249
+#Subtitles Script Extra labels
+
 msgctxt "#31250"
 msgid "Subtitles"
 msgstr ""
@@ -252,9 +284,14 @@ msgctxt "#31251"
 msgid "Subtitle Source"
 msgstr ""
 
+#empty strings from id 31252 to 31399
+#PVR Labels
+
 msgctxt "#31400"
 msgid "Live TV"
 msgstr ""
+
+#empty string with id 31401
 
 msgctxt "#31402"
 msgid "New Group"
@@ -287,6 +324,18 @@ msgstr "Auto-play playlist on startup"
 msgctxt "#31409"
 msgid "Edit nodes"
 msgstr "Edit nodes"
+
+msgctxt "#31410"
+msgid "Video decoder"
+msgstr ""
+
+msgctxt "#31411"
+msgid "Pixel format"
+msgstr ""
+
+msgctxt "#31412"
+msgid "Audio bitrate"
+msgstr ""
 
 msgctxt "#32000"
 msgid "Display mode"
@@ -529,7 +578,7 @@ msgid "Position of the codec logos in the PlayerProcessInfo"
 msgstr ""
 
 msgctxt "#32062"
-msgid "Show codec logos when video starts"
+msgid "Position of the codec logos when video starts"
 msgstr ""
 
 msgctxt "#32063"
@@ -544,10 +593,34 @@ msgctxt "#32065"
 msgid "VS10 mode"
 msgstr ""
 
-msgctxt "#32066"
-msgid "Coloured title lines in PlayerProcessInfo"
-msgstr ""
-
 msgctxt "#32067"
 msgid "L5 Active Offsets"
+msgstr ""
+
+msgctxt "#32068"
+msgid "Version"
+msgstr ""
+
+msgctxt "#32069"
+msgid "Bit depth"
+msgstr ""
+
+msgctxt "#32070"
+msgid "EOTF & Gamut"
+msgstr ""
+
+msgctxt "#32071"
+msgid "Duration of the codec logos when video starts"
+msgstr ""
+
+msgctxt "#32072"
+msgid "Standard"
+msgstr ""
+
+msgctxt "#32075"
+msgid "second"
+msgstr ""
+
+msgctxt "#32076"
+msgid "seconds"
 msgstr ""

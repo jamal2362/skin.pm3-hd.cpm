@@ -222,6 +222,48 @@
 					<texturefocus border="7">list-focus.png</texturefocus>
 					<texturenofocus></texturenofocus>
 					<textureradioon>radiobutton-focus-2.png</textureradioon>
+					<label>$LOCALIZE[32071]</label>
+					<onclick condition="!Skin.HasSetting(osd.useOneSecondCodecLogos) + !Skin.HasSetting(osd.useTwoSecondsCodecLogos) + !Skin.HasSetting(osd.useThreeSecondsCodecLogos) + !Skin.HasSetting(osd.useFourSecondsCodecLogos) + !Skin.HasSetting(osd.useFiveSecondsCodecLogos) + !Skin.HasSetting(osd.useSixSecondsCodecLogos) + !Skin.HasSetting(osd.useSevenSecondsCodecLogos) + !Skin.HasSetting(osd.useEightSecondsCodecLogos) + !Skin.HasSetting(osd.useNineSecondsCodecLogos) + !Skin.HasSetting(osd.useTenSecondsCodecLogos) + !Skin.HasSetting(osd.useElevenSecondsCodecLogos) + !Skin.HasSetting(osd.useTwelveSecondsCodecLogos) + !Skin.HasSetting(osd.useThirteenSecondsCodecLogos) + !Skin.HasSetting(osd.useFourteenSecondsCodecLogos) + !Skin.HasSetting(osd.useFifteenSecondsCodecLogos)">Skin.ToggleSetting(osd.useSixSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useFiveSecondsCodecLogos)">Skin.ToggleSetting(osd.useSixSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useSixSecondsCodecLogos)">Skin.ToggleSetting(osd.useSevenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useSevenSecondsCodecLogos)">Skin.ToggleSetting(osd.useEightSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useEightSecondsCodecLogos)">Skin.ToggleSetting(osd.useNineSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useNineSecondsCodecLogos)">Skin.ToggleSetting(osd.useTenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useTenSecondsCodecLogos)">Skin.ToggleSetting(osd.useElevenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useElevenSecondsCodecLogos)">Skin.ToggleSetting(osd.useTwelveSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useTwelveSecondsCodecLogos)">Skin.ToggleSetting(osd.useThirteenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useThirteenSecondsCodecLogos)">Skin.ToggleSetting(osd.useFourteenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useFourteenSecondsCodecLogos)">Skin.ToggleSetting(osd.useFifteenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useFifteenSecondsCodecLogos)">Skin.ToggleSetting(osd.useOneSecondCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useOneSecondCodecLogos)">Skin.ToggleSetting(osd.useTwoSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useTwoSecondsCodecLogos)">Skin.ToggleSetting(osd.useThreeSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useThreeSecondsCodecLogos)">Skin.ToggleSetting(osd.useFourSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useFourSecondsCodecLogos)">Skin.Reset(osd.useFourSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useOneSecondCodecLogos)">Skin.Reset(osd.useOneSecondCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useTwoSecondsCodecLogos)">Skin.Reset(osd.useTwoSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useThreeSecondsCodecLogos)">Skin.Reset(osd.useThreeSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useFiveSecondsCodecLogos)">Skin.Reset(osd.useFiveSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useSixSecondsCodecLogos)">Skin.Reset(osd.useSixSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useSevenSecondsCodecLogos)">Skin.Reset(osd.useSevenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useEightSecondsCodecLogos)">Skin.Reset(osd.useEightSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useNineSecondsCodecLogos)">Skin.Reset(osd.useNineSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useTenSecondsCodecLogos)">Skin.Reset(osd.useTenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useElevenSecondsCodecLogos)">Skin.Reset(osd.useElevenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useTwelveSecondsCodecLogos)">Skin.Reset(osd.useTwelveSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useThirteenSecondsCodecLogos)">Skin.Reset(osd.useThirteenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useFourteenSecondsCodecLogos)">Skin.Reset(osd.useFourteenSecondsCodecLogos)</onclick>
+					<onclick condition="Skin.HasSetting(osd.useFifteenSecondsCodecLogos)">Skin.Reset(osd.useFifteenSecondsCodecLogos)</onclick>
+					<label2>$VAR[OSDCodecLogosStartupTimerLabel]</label2>
+				</control>
+				<control type="button" id="120">
+					<width>950</width>
+					<height>35</height>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="7">list-focus.png</texturefocus>
+					<texturenofocus></texturenofocus>
+					<textureradioon>radiobutton-focus-2.png</textureradioon>
 					<label>$LOCALIZE[32062]</label>
 					<onclick condition="!Skin.HasSetting(osd.useleftCodecStartupLogos) + !Skin.HasSetting(osd.usecenterCodecStartupLogos) + !Skin.HasSetting(osd.userightCodecStartupLogos)">Skin.ToggleSetting(osd.useleftCodecStartupLogos)</onclick>
 					<onclick condition="Skin.HasSetting(osd.useleftCodecStartupLogos)">Skin.ToggleSetting(osd.usecenterCodecStartupLogos)</onclick>
@@ -231,7 +273,7 @@
 					<onclick condition="Skin.HasSetting(osd.usecenterCodecStartupLogos)">Skin.Reset(osd.usecenterCodecStartupLogos)</onclick>
 					<label2>$VAR[OSDCodecLogosStartupLabel]</label2>
 				</control>
-				<control type="button" id="120">
+				<control type="button" id="121">
 					<width>950</width>
 					<height>35</height>
 					<font>font12</font>
@@ -249,7 +291,7 @@
 					<onclick condition="Skin.HasSetting(osd.usecenterCodecLogos)">Skin.Reset(osd.usecenterCodecLogos)</onclick>
 					<label2>$VAR[OSDCodecLogosLabel]</label2>
 				</control>
-				<control type="button" id="121">
+				<control type="button" id="122">
 					<width>950</width>
 					<height>35</height>
 					<font>font12</font>
@@ -267,7 +309,7 @@
 					<onclick condition="Skin.HasSetting(ppi.usecenterCodecLogos)">Skin.Reset(ppi.usecenterCodecLogos)</onclick>
 					<label2>$VAR[PPICodecLogosLabel]</label2>
 				</control>
-				<control type="image" id="122">
+				<control type="image" id="123">
 					<width>950</width>
 					<height>2</height>
 					<texture>separator.png</texture>
