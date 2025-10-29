@@ -295,7 +295,7 @@
             </control>
             <!-- Group: HDR Static Metadata -->
             <control type="group">
-                <visible>String.Contains(Player.Process(video.hdr.type),hdr)</visible>
+                <visible>String.Contains(Player.Process(video.hdr.type),hdr) + String.IsEqual(Player.Process(video.dovi.has.config),0)</visible>
                 <left>873</left>
                 <top>147</top>
                 <!-- HDR Static Metadata Icon -->
@@ -924,7 +924,8 @@
             </control>
             <!-- Group: DV Levels Metadata + Without L5 Active Offsets -->
             <control type="group">
-                <visible>String.Contains(Player.Process(video.hdr.type),dolby vision)</visible>
+                <visible>String.IsEqual(Player.Process(video.dovi.has.config),1)</visible>
+                <visible>String.IsEqual(Player.Process(video.dovi.has.header),1)</visible>
                 <visible>String.IsEqual(Player.Process(video.dovi.has.l5),0)</visible>
                 <top>200</top>
                 <left>823</left>
@@ -1090,7 +1091,8 @@
             </control>
             <!-- Group: DV Levels Metadata + With L5 Active Offsets -->
             <control type="group">
-                <visible>String.Contains(Player.Process(video.hdr.type),dolby vision)</visible>
+                <visible>String.IsEqual(Player.Process(video.dovi.has.config),1)</visible>
+                <visible>String.IsEqual(Player.Process(video.dovi.has.header),1)</visible>
                 <visible>String.IsEqual(Player.Process(video.dovi.has.l5),1)</visible>
                 <top>200</top>
                 <left>823</left>
